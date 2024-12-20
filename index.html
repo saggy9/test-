@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with ChatGPT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginPage">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username (min. 3 chars)" required />
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="todoPage" class="hidden">
+        <h1>My To-Do List</h1>
+        <div class="todo-container">
+            <input type="text" id="taskInput" placeholder="What do you need to do?" />
+            <button id="addTaskButton">Add Task</button>
+            <button id="clearAllButton" class="danger">Clear All</button>
+        </div>
+        <ul id="taskList">
+            <p id="noTasks" class="hidden">No tasks yet! Start adding some</p>
+        </ul>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
